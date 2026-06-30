@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sign on the Line Mobile Notary — Glendale, CA</title>
+  <meta name="description" content="Contact Sign on the Line Notary to schedule a mobile notary appointment in Glendale or greater Los Angeles. Call, text, or email Steve Davis.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <style>
+    /* Additional contact page styles */
+    .hours-table { width:100%; border-collapse:collapse; margin-top:0.75rem; font-size:0.94rem; }
+    .hours-table td { padding:0.4rem 0; border-bottom:1px solid var(--border); }
+    .hours-table tr:last-child td { border-bottom:none; }
+    .hours-table td:last-child { text-align:right; color:var(--text-mid); }
+    .hours-surcharge { color:var(--gold); font-size:0.82rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Sign on the Line Notary Logo">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Sign on the Line</span>
+          <span class="nav-logo-sub">Mobile Notary</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Call, text, or send a message — I respond promptly</p>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info -->
+        <div>
+          <div class="contact-info-block">
+            <h3>Get in Touch</h3>
+            <div class="contact-row">
+              <span class="icon">📞</span>
+              <div>
+                <strong>Phone / Text</strong><br>
+                <a href="tel:8188048137" style="font-size:1.1rem; color:var(--navy);">(818) 804-8137</a><br>
+                <span style="font-size:0.88rem; color:var(--text-mid);">Call or text — both work</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="icon">✉️</span>
+              <div>
+                <strong>Email</strong><br>
+                <a href="mailto:steve@signontheline.net" style="color:var(--navy);">steve@signontheline.net</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="icon">📍</span>
+              <div>
+                <strong>Based in</strong><br>
+                Glendale, California
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <h3>Hours</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Saturday</td>
+                  <td>9:00 am – 7:00 pm</td>
+                </tr>
+                <tr>
+                  <td>Mon–Sat Evenings</td>
+                  <td>7:00 pm – 9:00 pm <span class="hours-surcharge">+$35</span></td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>By request <span class="hours-surcharge">+$35</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="font-size:0.88rem; margin-top:0.75rem; color:var(--text-mid);">Same-day appointments available during standard hours with 2-hour minimum notice (+$35 rush surcharge).</p>
+          </div>
+
+          <div class="contact-info-block">
+            <h3>Service Area</h3>
+            <p style="font-size:0.93rem;">I serve Glendale and surrounding communities throughout the San Gabriel Valley, San Fernando Valley, and greater Los Angeles area. Travel fees vary by zone — <a href="pricing.html">see full pricing</a>.</p>
+          </div>
+
+          <div class="contact-info-block">
+            <h3>Payment</h3>
+            <div class="payment-methods">
+              <span class="payment-pill">💵 Cash</span>
+              <span class="payment-pill">💸 Zelle</span>
+              <span class="payment-pill">📱 Venmo</span>
+              <span class="payment-pill">💳 Cash App</span>
+              <span class="payment-pill">🏦 Check</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div>
+          <h3 style="margin-bottom:1.25rem;">Send a Message</h3>
+          <form class="contact-form" action="https://formspree.io/f/xgojzgyr" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="First and last name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(818) 555-0000">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="city">Your City *</label>
+              <input type="text" id="city" name="city" required placeholder="Glendale, Burbank, Pasadena...">
+            </div>
+            <div class="form-group">
+              <label for="service">Type of Document / Service</label>
+              <select id="service" name="service">
+                <option value="">-- Select if known --</option>
+                <option>Power of Attorney</option>
+                <option>Advance Health Care Directive / Living Will</option>
+                <option>Trust or Estate Documents</option>
+                <option>Affidavit or Sworn Statement</option>
+                <option>Real Estate Deed</option>
+                <option>I-9 Employment Verification</option>
+                <option>Immigration Documents</option>
+                <option>Hospital / Care Facility Signing</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="timing">When Do You Need This?</label>
+              <input type="text" id="timing" name="timing" placeholder="e.g., This week, ASAP, Thursday afternoon">
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Any other details that would help me prepare for your appointment..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          </form>
+          <p style="font-size:0.82rem; color:var(--text-mid); margin-top:0.75rem; text-align:center;">I typically respond within a few hours during standard business hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHAT TO PREPARE ====== -->
+  <section class="content-section">
+    <div class="container" style="max-width:760px;">
+      <p class="section-label">Before Your Appointment</p>
+      <h2>What to Have Ready</h2>
+      <ul>
+        <li><strong>A valid, government-issued photo ID</strong> — driver's license, passport, or state ID. Must not be expired.</li>
+        <li><strong>Your document, unsigned</strong> — do not sign it before I arrive. The signature must be made in my presence.</li>
+        <li><strong>Any required witnesses</strong> — some documents (advance health care directives, certain trusts) require witnesses. Arrange for them to be present; I cannot serve as a witness.</li>
+        <li><strong>Payment ready</strong> — cash, Zelle, Venmo, Cash App, or check.</li>
+      </ul>
+      <p>Not sure what to prepare? <a href="faq.html">Check the FAQ</a> or just reach out — I'm happy to walk you through it.</p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Sign on the Line Notary">
+          <p>Professional mobile notary services serving Glendale and the greater Los Angeles area. California Commissioned Notary Public.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 <a href="tel:8188048137">(818) 804-8137</a></li>
+            <li>✉️ <a href="mailto:steve@signontheline.net">steve@signontheline.net</a></li>
+            <li>📍 Glendale, CA</li>
+          </ul>
+          <br>
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon–Sat: 9am–7pm</li>
+            <li>Evenings &amp; Sun: By request</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sign on the Line Notary &mdash; Steve Davis, California Notary Public</p>
+        <p>Commission # <span style="color:var(--gold);">[PENDING]</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navMenu').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
