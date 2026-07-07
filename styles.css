@@ -743,6 +743,19 @@ section { padding: 4rem 0; }
   vertical-align: middle;
 }
 
+/* ---- Reusable Grid Helpers (mobile-stackable) ---- */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr 1fr; }
@@ -776,6 +789,8 @@ section { padding: 4rem 0; }
 
   .services-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr 1fr; }
+
+  .grid-2col, .grid-3col { grid-template-columns: 1fr; }
 
   .doc-list { columns: 1; }
   .contact-grid { grid-template-columns: 1fr; }
