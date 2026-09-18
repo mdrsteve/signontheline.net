@@ -1,5 +1,5 @@
 /* ============================================
-   Sign on the Line Notary — Main Stylesheet
+   Sign on the Line Notary, Main Stylesheet
    Brand: Navy #0D1E30 | Gold #BB9252 | Off-White #F4F4F6
    ============================================ */
 
@@ -528,6 +528,38 @@ section { padding: 4rem 0; }
   border-bottom: none;
 }
 
+/* Two-year variant. Used on trust-signings.html, where the current rate and
+   the 1/1/2027 statutory rate sit side by side in one table. The live number
+   stays gold; the future one is muted so it reads as context, not as a price. */
+.sample-totals table.two-year th {
+  text-align: right;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: rgba(244, 244, 246, 0.6);
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sample-totals table.two-year th:first-child {
+  text-align: left;
+}
+
+.sample-totals table.two-year td:nth-child(2) {
+  text-align: right;
+  font-weight: bold;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.sample-totals table.two-year td:nth-child(3) {
+  text-align: right;
+  font-weight: normal;
+  color: rgba(244, 244, 246, 0.55);
+  white-space: nowrap;
+}
+
 /* ---- Payment Methods ---- */
 .payment-methods {
   display: flex;
@@ -763,10 +795,10 @@ section { padding: 4rem 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 700px) {
-  h1 { font-size: 1.9rem; }
-  h2 { font-size: 1.5rem; }
-
+/* The nav collapses earlier than the rest of the layout. Six items plus the
+   logo block will not fit a horizontal row much below 820px, so the hamburger
+   takes over there rather than at the 700px content breakpoint. */
+@media (max-width: 820px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -780,6 +812,14 @@ section { padding: 4rem 0; }
   }
   .nav-menu.open { display: flex; }
   .nav-toggle { display: flex; }
+}
+
+@media (max-width: 700px) {
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; }
+
+  .sample-totals { padding: 1.5rem 1.25rem; }
+  .sample-totals table.two-year { font-size: 0.82rem; }
 
   .hero { padding: 3.5rem 0 3rem; }
   .hero-logo { width: 100px; height: 100px; }
