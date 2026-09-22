@@ -425,6 +425,19 @@ section { padding: 4rem 0; }
   margin-bottom: 0.1rem;
 }
 
+/* CNTDA credential seal. Used only in the trust-signings.html page hero, so
+   the other seven page heroes are untouched. Deliberately smaller than the
+   185px homepage logo: it supports the brand mark rather than competing with
+   it. The gold ring is a warmer gold than --gold, which is why it sits on
+   navy here rather than on the off-white credential block. */
+.hero-badge {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.25rem;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
 /* ---- Content Sections ---- */
 .content-section {
   padding: 3.5rem 0;
@@ -820,6 +833,8 @@ section { padding: 4rem 0; }
 
   .sample-totals { padding: 1.5rem 1.25rem; }
   .sample-totals table.two-year { font-size: 0.82rem; }
+
+  .hero-badge { width: 64px; height: 64px; margin-bottom: 1rem; }
 
   .hero { padding: 3.5rem 0 3rem; }
   .hero-logo { width: 100px; height: 100px; }
