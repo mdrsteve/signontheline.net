@@ -1,0 +1,6 @@
+# Sign on the Line Notary - signontheline.net
+# All search engines and AI assistants are welcome to read this site.
+User-agent: *
+Allow: /
+
+Sitemap: https://signontheline.net/sitemap.xml
